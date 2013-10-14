@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/xhtml1-loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Sar Statistic</title>
+	<style type="text/css">
+		.server_addr {
+		}
+		.server_platform {
+		}
+		.test_start {
+		}
+		.test_duration {
+		}
+		.stat {
+		}
+		.graph {
+		}
+		.raw_data {
+		}
+		.contact {
+		}	
+		table,td,th{
+			border:1px #000 solid;
+			border-collapse:collapse;
+		}
+		hr {
+			border-top:1px dotted;
+			height:0;
+			width:98%;
+			left:0;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Sar Statistic</h1>
+		<hr></hr>
+		<div id="server_addr">Server address: 10.0.6.42  </div>
+		<div id="server_platform">Platform: Linux  </div>
+		<div id="test_start">Test started at: 13:44:21 (Server Time) </div>
+		<div id="test_duration">Test duration: 115 seconds </div>
+		<hr></hr>
+		<h2>Result Summary</h2>
+		<div id="stat"><table><tr><td colspan=7>cpu</td></tr><tr><td></td><td>CPU</td><td>%user</td><td>%nice</td><td>%system</td><td>%iowait</td><td>%idle</td></tr><tr><td>Average:</td><td>all</td><td>3.50</td><td>0.00</td><td>1.62</td><td>3.85</td><td>91.03</td></tr></table><br /><table><tr><td colspan=6>io</td></tr><tr><td></td><td>tps</td><td>rtps</td><td>wtps</td><td>bread/s</td><td>bwrtn/s</td></tr><tr><td>Average:</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr></table><br /><table><tr><td colspan=10>kernel</td></tr><tr><td></td><td>dentunusd</td><td>file-sz</td><td>inode-sz</td><td>super-sz</td><td>%super-sz</td><td>dquot-sz</td><td>%dquot-sz</td><td>rtsig-sz</td><td>%rtsig-sz</td></tr><tr><td>Average:</td><td>368</td><td>0</td><td>2014</td><td>0</td><td>0.00</td><td>0</td><td>0.00</td><td>0</td><td>0.00</td></tr></table><br /><table><tr><td colspan=10>memory</td></tr><tr><td></td><td>kbmemfree</td><td>kbmemused</td><td>%memused</td><td>kbbuffers</td><td>kbcached</td><td>kbswpfree</td><td>kbswpused</td><td>%swpused</td><td>kbswpcad</td></tr><tr><td>Average:</td><td>5701</td><td>997651</td><td>99.43</td><td>38375</td><td>708764</td><td>1436200</td><td>25672</td><td>1.76</td><td>1488</td></tr></table><br /><table><tr><td colspan=9>network</td></tr><tr><td></td><td>IFACE</td><td>rxpck/s</td><td>txpck/s</td><td>rxbyt/s</td><td>txbyt/s</td><td>rxcmp/s</td><td>txcmp/s</td><td>rxmcst/s</td></tr><tr><td>Average:</td><td>lo</td><td>2.23</td><td>2.23</td><td>69.66</td><td>69.66</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>Average:</td><td>eth0</td><td>59.49</td><td>53.22</td><td>16199.77</td><td>19817.88</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>Average:</td><td>sit0</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr></table><br /><table><tr><td colspan=5>page</td></tr><tr><td></td><td>pgpgin/s</td><td>pgpgout/s</td><td>fault/s</td><td>majflt/s</td></tr><tr><td>Average:</td><td>16.56</td><td>570.14</td><td>631.87</td><td>0.00</td></tr></table><br /><table><tr><td colspan=6>process</td></tr><tr><td></td><td>runq-sz</td><td>plist-sz</td><td>ldavg-1</td><td>ldavg-5</td><td>ldavg-15</td></tr><tr><td>Average:</td><td>0</td><td>360</td><td>0.49</td><td>0.77</td><td>0.47</td></tr></table><br /></div>
+		<hr></hr>
+		<h2>Graph Report</h2>
+		<div id="graph"><img src=sar_cpu.png></img> <img src=sar_io.png></img> <img src=sar_kernel.png></img> <img src=sar_memory.png></img> <img src=sar_network_eth0.png></img> <img src=sar_network_lo.png></img> <img src=sar_network_sit0.png></img> <img src=sar_page.png></img> <img src=sar_process.png></img> </div>
+		<hr></hr>
+		<div id="raw_data"><a href=cpu.result.data>View Raw Data ( cpu )</a><br /><a href=io.result.data>View Raw Data ( io )</a><br /><a href=kernel.result.data>View Raw Data ( kernel )</a><br /><a href=memory.result.data>View Raw Data ( memory )</a><br /><a href=network.eth0.result.data>View Raw Data ( network - eth0 )</a><br /><a href=network.lo.result.data>View Raw Data ( network - lo )</a><br /><a href=network.result.data>View Raw Data ( network - result )</a><br /><a href=network.sit0.result.data>View Raw Data ( network - sit0 )</a><br /><a href=page.result.data>View Raw Data ( page )</a><br /><a href=process.result.data>View Raw Data ( process )</a><br /></div>
+		<hr></hr>
+		<div id="contact">Any question, please contact with <a href="mailto:charlse.zhang@suzsoft.com">charlse.zhang</a>.</div>
+	</body>
+</html>

@@ -1,0 +1,4 @@
+13:44:21        IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo      2.23      2.23     69.66     69.66      0.00      0.00      0.00
+Average:         eth0     59.49     53.22  16199.77  19817.88      0.00      0.00      0.00
+Average:         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00

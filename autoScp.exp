@@ -1,0 +1,43 @@
+# auto ssh connection and execute command
+set server_addr [lindex $argv 0]
+set server_user [lindex $argv 1]
+set server_pwd [lindex $argv 2]
+set file_from [lindex $argv 3]
+set file_to [lindex $argv 4]
+set timeout 20000
+spawn scp $server_user@$server_addr:$file_from $file_to 
+expect {
+    "*password*" {
+        send "$server_pwd\n"
+            expect {
+                "*password*" {
+                    return 1
+                }
+                "*$*" {
+                    return 0
+                }
+                "*#*" {
+                    return 0
+                }
+            }
+    }
+    "*yes/no*" {
+        send "yes\n"
+            expect {
+                "*password*" {
+                    send "$server_pwd\n"
+                        expect {
+                            "*password*" {
+                                return 1
+                            }
+                            "*$*" {
+                                return 0
+                            }
+                            "*#*" {
+                                return 0
+                            }
+                        }
+                }
+            }
+    }
+}

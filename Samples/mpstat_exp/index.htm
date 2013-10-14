@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/xhtml1-loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Mpstat Statistic</title>
+	<style type="text/css">
+		.server_addr {
+		}
+		.server_platform {
+		}
+		.test_start {
+		}
+		.test_duration {
+		}
+		.stat {
+		}
+		.graph {
+		}
+		.raw_data {
+		}
+		.contact {
+		}	
+		table,td,th{
+			border:1px #000 solid;
+			border-collapse:collapse;
+		}
+		hr {
+			border-top:1px dotted;
+			height:0;
+			width:98%;
+			left:0;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Mpstat Statistic</h1>
+		<hr></hr>
+		<div id="server_addr">Server address: 10.0.6.42  </div>
+		<div id="server_platform">Platform: Linux  </div>
+		<div id="test_start">Test started at: 14:02:46 (Server Time) </div>
+		<div id="test_duration">Test duration: 140 seconds </div>
+		<hr></hr>
+		<h2>Result Summary</h2>
+		<div id="stat"><table><tr><td>Class</td><td>CPU</td><td>%user</td><td>%nice</td><td>%system</td><td>%iowait</td><td>%irq</td><td>%soft</td><td>%idle</td><td>intr/s</td></tr><tr><td>Average:</td><td>all</td><td>6.24</td><td>0.00</td><td>1.96</td><td>3.08</td><td>0.48</td><td>0.36</td><td>87.89</td><td>1330.80</td></tr></table></div>
+		<hr></hr>
+		<h2>Graph Report</h2>
+		<div id="graph"><img src=mpstat_idle.png></img> <img src=mpstat_intr_per_s.png></img> <img src=mpstat_iowait.png></img> <img src=mpstat_irq.png></img> <img src=mpstat_nice.png></img> <img src=mpstat_soft.png></img> <img src=mpstat_system.png></img> <img src=mpstat_user.png></img> </div>
+		<hr></hr>
+		<div id="raw_data"><a href=result.data>View Raw Data</a></div>
+		<hr></hr>
+		<div id="contact">Any question, please contact with <a href="mailto:charlse.zhang@suzsoft.com">charlse.zhang</a>.</div>
+	</body>
+</html>

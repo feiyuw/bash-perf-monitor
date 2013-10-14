@@ -1,0 +1,2 @@
+Class        CPU   %user   %nice %system %iowait    %irq   %soft   %idle    intr\/s
+Average:     all    6.24    0.00    1.96    3.08    0.48    0.36    87.89    1330.80    

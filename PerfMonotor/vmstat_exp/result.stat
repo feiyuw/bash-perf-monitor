@@ -1,0 +1,4 @@
+Fri, 16 Nov 2007 13:48:06 +0800
+procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in    cs us sy id wa
+ 0.1 0.1 25664.0 10618.5 38674.9 699044.8 0.0 0.1 84.3 575.9 1281.2 487.5 7.0 2.4 85.8 4.8 

@@ -1,0 +1,42 @@
+# auto ssh connection and execute command
+set server_addr [lindex $argv 0]
+set server_user [lindex $argv 1]
+set server_pwd [lindex $argv 2]
+set server_command [lindex $argv 3]
+set timeout 20000
+spawn ssh $server_addr -l $server_user $server_command
+expect {
+    "*password*" {
+        send "$server_pwd\n"
+            expect {
+                "*password*" {
+                    return 1
+                }
+                "*$*" {
+                    return 0
+                }
+                "*#*" {
+                    return 0
+                }
+            }
+    }
+    "*yes/no*" {
+        send "yes\n"
+            expect {
+                "*password*" {
+                    send "$server_pwd\n"
+                        expect {
+                            "*refused*" {
+                                return 1
+                            }
+                            "*$*" {
+                                return 0
+                            }
+                            "*#*" {
+                                return 0
+                            }
+                        }
+                }
+            }
+    }
+}

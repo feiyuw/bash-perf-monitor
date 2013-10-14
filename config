@@ -1,0 +1,32 @@
+#========================================================================
+# Author: Charlse.Zhang
+# Email: feiyuw@gmail.com
+# Created Time: 2007年11月06日 星期二 15时05分18秒
+# File Name: /home/zhang/Develop/BashWork/perftools/PerfMonitor/config.sh
+# Description: 
+#   Header file of the application
+#========================================================================
+# Header file, "#!" is not needed
+
+#============================== EXIT CODE ==============================
+RUNTIME_ERROR=255
+EXIT_SIGNAL=2
+
+#============================ MONITOR INFO ==============================
+MONITOR_TOOLS=("vmstat" "mpstat" "sar")
+
+#============================ REPORT INFO ===============================
+REPORT_TYPES=("default" "simple")
+
+#=========================== USER SETTINGS ==============================
+
+BASE_DIR=.
+SERVER_ADDR=10.0.6.42
+          SERVER_USER=oracle
+          SERVER_PWD=oracle
+MONITOR_TOOL=sar
+SERVER_PLATFORM=Linux
+REPORT_TYPE=default
+DEFAULT=1
+TEST_LOG_NAME=test.1195198424
+SAMPLING_DENSITY=5

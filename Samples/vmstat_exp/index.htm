@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/xhtml1-loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Vmstat Statistic</title>
+	<style type="text/css">
+		.server_addr {
+		}
+		.server_platform {
+		}
+		.test_start {
+		}
+		.test_duration {
+		}
+		.stat {
+		}
+		.graph {
+		}
+		.raw_data {
+		}
+		.contact {
+		}	
+		table,td,th{
+			border:1px #000 solid;
+			border-collapse:collapse;
+		}
+		hr {
+			border-top:1px dotted;
+			height:0;
+			width:98%;
+			left:0;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Vmstat Statistic</h1>
+		<hr></hr>
+		<div id="server_addr">Server address: 10.0.6.42  </div>
+		<div id="server_platform">Platform: Linux  </div>
+		<div id="test_start">Test started at: Fri, 16 Nov 2007 13:48:06 +0800 (Server Time) </div>
+		<div id="test_duration">Test duration: 235 seconds </div>
+		<hr></hr>
+		<h2>Result Summary</h2>
+		<div id="stat"><table><tr><td colspan=2>procs</td><td colspan=4>-----------memory----------</td><td colspan=2>---swap--</td><td colspan=2>-----io----</td><td colspan=2>--system--</td><td colspan=4>----cpu----</td></tr><tr><td>r</td><td>b</td><td>swpd</td><td>free</td><td>buff</td><td>cache</td><td>si</td><td>so</td><td>bi</td><td>bo</td><td>in</td><td>cs</td><td>us</td><td>sy</td><td>id</td><td>wa</td></tr><tr><td>0.1</td><td>0.1</td><td>25664.0</td><td>10618.5</td><td>38674.9</td><td>699044.8</td><td>0.0</td><td>0.1</td><td>84.3</td><td>575.9</td><td>1281.2</td><td>487.5</td><td>7.0</td><td>2.4</td><td>85.8</td><td>4.8</td></tr></table></div>
+		<hr></hr>
+		<h2>Graph Report</h2>
+		<div id="graph"><img src=vmstat_cpu.png></img> <img src=vmstat_io.png></img> <img src=vmstat_memory.png></img> <img src=vmstat_procs.png></img> <img src=vmstat_swap.png></img> <img src=vmstat_system.png></img> </div>
+		<hr></hr>
+		<div id="raw_data"><a href=result.data>View Raw Data</a></div>
+		<hr></hr>
+		<div id="contact">Any question, please contact with <a href="mailto:charlse.zhang@suzsoft.com">charlse.zhang</a>.</div>
+	</body>
+</html>
